@@ -8,10 +8,10 @@ from sklearn.cluster import KMeans
 from mpl_toolkits import mplot3d
 
 # Class definition
-class Clustering_Vectors():
+class clusteringVectors():
 
     # Hierarchical Clustering:
-    def hierarchical_clustering(self,M):
+    def hierarchicalClustering(self,M):
         Vectors = M.copy()
         
         cluster_id = fclusterdata(X=Vectors, t=3, criterion='maxclust', method='ward')
@@ -27,7 +27,7 @@ class Clustering_Vectors():
         pass
 
     # K-means clustering
-    def Kmeans_clustering(self, M):
+    def KmeansClustering(self, M):
         
         X = M.copy()
         kmeans = KMeans(n_clusters=3).fit(X)
