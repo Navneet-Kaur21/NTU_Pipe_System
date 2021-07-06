@@ -8,8 +8,8 @@ from sklearn.cluster import KMeans
 from mpl_toolkits import mplot3d
 
 # Import classes from Clustering.py and Extracting_Data.py
-from Scripts.Clustering import clusteringVectors
-from Scripts.ExtractingData import extraction
+from Clustering import clusteringVectors
+from ExtractingData import extraction
 
 # Define a class for functions that are required for 
 # plotting the required data
@@ -125,7 +125,7 @@ ax.scatter3D(xs_1, ys_1, zs_1, cmap='Greens')
 ax.scatter3D(xs_2, ys_2, zs_2, cmap='Greens')
 ax.scatter3D(xs_3, ys_3, zs_3, cmap='Greens')
 
-filename_allPoints = "../Data/lines_original.txt"
+filename_allPoints = "../Data/lines.txt"
 lines = extracting.extractingLinePoints(filename_allPoints)
 
 allData = []

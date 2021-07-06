@@ -39,9 +39,9 @@ class extraction():
     # elements at i,j,k positions
     def individualComponents(self, i, j, k, line_data):
 
-        x = self.extracting_components(line_data, i)
-        y = self.extracting_components(line_data, j)
-        z = self.extracting_components(line_data, k)
+        x = self.extractingComponents(line_data, i)
+        y = self.extractingComponents(line_data, j)
+        z = self.extractingComponents(line_data, k)
 
         return x, y, z
     
