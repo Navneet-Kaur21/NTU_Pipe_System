@@ -8,8 +8,8 @@ from sklearn.cluster import KMeans
 from mpl_toolkits import mplot3d
 
 # Import classes from Clustering.py and Extracting_Data.py
-from Clustering import clusteringVectors
-from ExtractingData import extraction
+from Scripts.Clustering import clusteringVectors
+from Scripts.ExtractingData import extraction
 
 # Define a class for functions that are required for 
 # plotting the required data

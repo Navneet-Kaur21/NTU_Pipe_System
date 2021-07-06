@@ -3,7 +3,7 @@ from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import math
 
-from ExtractingData import extraction
+from Scripts.ExtractingData import extraction
 
 centerlinesFileName = "../Data/centerlines.txt"
 
@@ -110,7 +110,7 @@ for i in range(length_data):
     y = [y0[i], y1[i]]
     z = [z0[i], z1[i]]
 
-    figure = ax.plot(x, y, z)
+    figure = ax.plot(x, y, z, 'red')
 
 
 for i in range(len(x0_f)):
