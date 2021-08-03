@@ -20,7 +20,7 @@ def PCA(data, correlation=False, sort=True):
 
 def main():
 
-    filename = "..\Data\lines_original.txt"
+    filename = "../data provided/txt files/lines_original.txt"
     points = np.loadtxt(filename, delimiter=' ')[:, 0:3] # Import TXT data to np.array, here only import 3 columns
     print('total points number is:', points.shape[0])
 

@@ -42,7 +42,7 @@ class surfacePlotting():
         return xs, ys, zs
 
 
-filename = "../Data/centerlines.txt"
+filename = "../data provided/txt files/centerlines.txt"
 
 clustering = clusteringVectors()
 extracting = extraction()
@@ -125,7 +125,7 @@ ax.scatter3D(xs_1, ys_1, zs_1, cmap='Greens')
 ax.scatter3D(xs_2, ys_2, zs_2, cmap='Greens')
 ax.scatter3D(xs_3, ys_3, zs_3, cmap='Greens')
 
-filename_allPoints = "../Data/lines.txt"
+filename_allPoints = "../data provided/txt files/lines.txt"
 lines = extracting.extractingLinePoints(filename_allPoints)
 
 allData = []

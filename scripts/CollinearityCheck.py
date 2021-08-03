@@ -5,7 +5,7 @@ import math
 
 from Scripts.ExtractingData import extraction
 
-centerlinesFileName = "../Data/centerlines.txt"
+centerlinesFileName = "../data provided/txt files/centerlines.txt"
 
 extracting = extraction()
 
@@ -52,7 +52,7 @@ for i in range(length_data):
                         str(x1[i]) + " " + str(y1[i]) + " " + str(z1[i]) + " " + 
                         str(M[i][0]) + " " + str(M[i][1]) + " " + str(M[i][2]) + "\n" )
 
-file = open('Data.txt', 'w')
+file = open('../tests/Data.txt', 'w')
 
 file.truncate(0)
 
@@ -94,7 +94,7 @@ for i in range(len(x0_f)):
                     str(x1_f[i]) + " " + str(y1_f[i]) + " " + str(z1_f[i]) + " " + str(M_f[i][0]) + " " + 
                     str(M_f[i][1]) + " " + str(M_f[i][2]) + "\n" )
 
-file_f = open('DataExtended.txt', 'w')
+file_f = open('../tests/DataExtended.txt', 'w')
 
 file_f.truncate(0)
 
